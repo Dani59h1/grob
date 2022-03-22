@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fortsæt snakken...</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+/* ____________ SECTION 1 ____________ */
+
+p {
+  line-height: 1.5;
+}
+
+
+
+#first_section { 
+  padding-inline: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  background-color: rgb(248, 248, 160);
+}
+
+h1, h2 {
+    color: rgb(208, 11, 11);
+     text-align: center;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+
+  width: 100%;
+  margin: 0 auto;
+padding-top: 2rem;
+  font-size: 5rem;
+
+}
+
+.video-container {
+  width: 100%;
+  height: 55vw;
+  object-fit: cover;
+}
+
+/* ____________ SECTION 2 ____________ */
+
+hr {
+  width: 80%;
+}
+
+
+#second_section {
+   
+    background-size: cover;
+    padding-bottom: 7rem;
+    
+}
+
+
+#second_section h3 {
+      text-align: center;
+      font-size: 3rem;
+      padding-block: 3rem;
+}
+
+
+main {
+  background-image: url("billeder/Baggrundsbillede_smoke2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-inline: 5rem;
+  padding-block: 7rem;
+   background-attachment: fixed;
+  background-position: center;
+}
+
+.wrapmeup {
+  background-color: rgb(248, 248, 160);
+  
+}
+
+
+@media (min-width: 650px){
+.sec2grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 3rem;
+}
+}
+
+@media (max-width: 649px){
+.sec2grid {
+    padding: 2rem;
+}
+.paragraph {
+  padding-block: 1rem;
+}
+}
+
+
+.spinn {
+  animation: rotate 2s forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+
+  }
+
+  100% {
+    transform: rotate(1000deg);
+
+  }
+}
+
+
+/* ________________SECTION 3____________________ */ 
+
+
+
+/* 
+______________SECTION 4 _____________________  */
+
+#fourth_section {
+  background-color: rgb(248, 248, 160);
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-top: 2rem;
+padding-bottom: 3rem;
+}
+
+.batten {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#imege {
+  padding-inline: 2rem;
+}
+
+.centerbatten {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.batten:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.1);
+}
+
+/* _______________________________________ */
+
+#modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  z-index: 500;
+}
+
+#modal article 
+      {
+        max-width: 40%;
+        margin: auto;
+        margin-block: 3rem;
+     
+      }
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="navbar" id="navbar">
+        <a href="index.html">
+            <img src="billeder/logo.png" class="logo" alt="logo" />
+        </a>
+       
+        <nav class="nav">
+            <ul class="menu">
+                
+                <li class="nav-item"> <a href="index.html">HOME</a></li>
+                <li class="nav-item"> <a href="portfolio.html">PORTFOLIO</a></li>
+                
+                
+            </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<section id="first_section">
+
+    <div class="section_wrapper">
+
+        <video class="video-container" autoplay loop muted preload="auto">
+            <source src="video/GrobMedDisclaimer.mp4" type="video/mp4"
+                alt="HTML5 background video">
+        </video>    
+    </div>
+
+    <h1>Fortsæt Snakken...</h1>
+</section>
+
+<main  id="bckgrndbilld" >
+
+<section id="second_section">
+  
+
+    <!-- <h3>WHAT CAN WE DO FOR YOU?</h3> -->
+
+    <div class="wrapmeup">
+    <div class="sec2grid">
+      <div class="theimage">
+    <img src="new/pic7.jpg" alt="tester">
+    <img src="new/fsnakken.svg" alt="streg" width="400" />
+    </div>
+    <div class="paragraph">
+      <img src="new/fsnakken2.svg" alt="streg" width="400" />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum, at laborum hic dolore debitis ex, veniam, provident earum doloremque et sapiente. Atque similique nemo numquam obcaecati magni officiis distinctio quibusdam! Deleniti libero odio modi temporibus maiores. Vel amet velit nulla, minima dolores corporis excepturi exercitationem. Consectetur obcaecati repudiandae ab molestias, perspiciatis reiciendis vitae hic minus tempora laborum, quidem tempore, ipsum sit temporibus libero adipisci laudantium? Suscipit accusamus et voluptatibus debitis, culpa quis provident in?</p></div>
+    <div class="paragraph"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p></div>
+    </div>
+    
+    </div>
+</section>
+
+<section id="third_section">
+
+
+<div class="wrapmeup">
+  <div class="sec2grid">
+    
+    <div class="paragraph">
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus temporibus perferendis autem. Cum suscipit
+        tenetur rem error id optio libero temporibus totam amet omnis!</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit
+        eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p>
+    </div>
+
+    <div>
+    <img src="new/pic5.jpg" alt="tester">
+    <img src="new/prikstreg.svg" alt="stregmedprik" width="400" />
+    </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+<section id="fourth_section">
+
+  <div id="text"
+  ><h3>test</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem unde modi reprehenderit debitis quidem magni veniam assumenda? Quos a repellat nostrum voluptatum impedit, et alias! Maiores distinctio minima sequi, ea, nulla delectus molestias saepe, vel natus reprehenderit quo optio.
+
+  </p>
+  </div>
+
+  <div id="imege">
+    <img id="omgg" src="billeder/wheel.png" alt="oke">
+
+    <div class="centerbatten">
+    <button class="batten">TILMELD NYHEDSBREV</button>
+    </div>
+
+  </div>
+  
+<aside id="modal">
+  <article>
+    <img src="" alt="">
+  </article>
+</aside>
+
+</section>
+
+
+<footer>
+  <a href="https://www.instagram.com/teatergrob/">
+    <img src="new/igwhite.webp" alt="instagram" width="40" /></a>
+  <a href="https://www.facebook.com/teatergrob">
+    <img src="new/fbwhite.webp" alt="instagram" width="40" /></a>
+  <a href="https://www.teaterbilletter.dk/search/grob">
+    <img src="new/whitelogo-new.png" class="billet" alt="instagram" /></a>
+</footer>
+
+
+<script src="java.js">
+
+ 
+    
+
+</script>
+
+</body>
+</html>
