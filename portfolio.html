@@ -20,38 +20,89 @@ p {
 #first_section { 
   padding-inline: 1rem;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  
   background-color: rgb(248, 248, 160);
 }
 
 
 
 
-
-.video-container {
+.section_wrapper {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 55vw;
-  object-fit: cover;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ____________ SECTION 2 ____________ */
 
 
 #second_section {
+padding-inline: 3rem;
+    background-color: rgb(248, 248, 160);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding-block: 2rem;
+  
+}
+
+@media (min-width: 650px){
+#second_section {
+padding: 3rem;
+    background-color: rgb(248, 248, 160);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  padding: 3rem;
-    background-color: rgb(248, 248, 160);
-
-
+}
 }
 
 
 /* ________________SECTION 3____________________ */ 
 
+#third_section {
+background-color: rgb(248, 248, 160);
+padding-bottom: 2rem;
+}
 
+.videotwo {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+@media (min-width: 650px){
+#third_section {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+justify-items: center;
+align-items: center;
+padding-inline: 10rem;  
+  }
+}
+
+@media (max-width: 649px){
+  #third_section {
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: auto;
+gap: 2rem;
+padding-inline: 1rem;
+  }
+}
 
 /* 
 ______________SECTION 4 _____________________  */
@@ -92,9 +143,12 @@ ______________SECTION 4 _____________________  */
 
   <div class="section_wrapper">
 
-    <video class="video-container" autoplay loop muted preload="auto">
+    <!-- <video class="video-container" autoplay loop muted preload="auto">
       <source src="video/grobLowMB.mp4" type="video/mp4" alt="HTML5 background video">
-    </video>
+    </video> -->
+    <iframe  class="responsive-iframe" src="https://www.youtube.com/embed/t9oyZ8BL714" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </div>
 </section>
 
@@ -107,7 +161,17 @@ ______________SECTION 4 _____________________  */
   <img src="new/pic7.jpg" alt="5">
 </section>
 
-<section id="third_section"></section>
+<section id="third_section">
+
+<video class="videotwo"  controls="controls" preload="auto">
+      <source src="video/grobShort3.mp4" type="video/mp4" alt="HTML5 background video">
+    </video>
+
+    <video class="videotwo"  controls="controls" preload="auto">
+      <source src="video/grobShort4.mp4" type="video/mp4" alt="HTML5 background video">
+    </video>
+
+</section>
 
 
 <footer>

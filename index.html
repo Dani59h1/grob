@@ -9,6 +9,12 @@
 
     <style>
 
+
+@font-face {
+    font-family: "knockout";
+    src: url("new/Knockout-HTF49Liteweight-Regular.woff") format('woff');
+}
+
 /* ____________ SECTION 1 ____________ */
 
 p {
@@ -22,6 +28,7 @@ p {
   padding-top: 1rem;
   padding-bottom: 4rem;
   background-color: rgb(248, 248, 160);
+  background: linear-gradient(0deg, rgb(220, 220, 175) 0%, rgba(252,204,103,1) 100%);
 }
 
 h1, h2 {
@@ -35,7 +42,7 @@ h1 {
   width: 100%;
   margin: 0 auto;
 padding-top: 2rem;
-  font-size: 5rem;
+  font-size: 4rem;
 
 }
 
@@ -43,13 +50,9 @@ padding-top: 2rem;
   width: 100%;
   height: 55vw;
   object-fit: cover;
-}
+} 
 
 /* ____________ SECTION 2 ____________ */
-
-hr {
-  width: 80%;
-}
 
 
 #second_section {
@@ -77,8 +80,9 @@ main {
   background-position: center;
 }
 
-.wrapmeup {
+.sec2grid {
   background-color: rgb(248, 248, 160);
+  background: linear-gradient(0deg, rgba(249,249,195,1) 0%, rgba(252,204,103,1) 100%);
   
 }
 
@@ -128,12 +132,20 @@ ______________SECTION 4 _____________________  */
 
 #fourth_section {
   background-color: rgb(248, 248, 160);
+  background: linear-gradient(0deg, rgba(249,249,195,1) 0%, rgba(252,204,103,1) 100%);
   padding-inline: 2rem;
+  padding-top: 2rem;
+padding-bottom: 3rem;
+}
+
+@media (min-width: 650px){
+  #fourth_section {
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  padding-top: 2rem;
-padding-bottom: 3rem;
+
+}
 }
 
 .batten {
@@ -158,6 +170,7 @@ padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .batten:hover {
@@ -222,53 +235,71 @@ padding-bottom: 3rem;
                 alt="HTML5 background video">
         </video>    
     </div>
-
-    <h1>Teater GROB</h1>
+<!-- 
+    <h1>#fortsætsnakken med Teater GROB</h1> -->
 </section>
 
+
+<!-- --------------------- -->
 <main  id="bckgrndbilld" >
 
 <section id="second_section">
   
 
-    <!-- <h3>WHAT CAN WE DO FOR YOU?</h3> -->
-
-    <div class="wrapmeup">
     <div class="sec2grid">
-      <div class="theimage">
-    <img src="new/pic7.jpg" alt="tester">
-    <img src="new/fsnakken.svg" alt="streg" width="400" />
-    </div>
+
+
+      
+
+
     <div class="paragraph">
       <img src="new/fsnakken2.svg" alt="streg" width="400" />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum, at laborum hic dolore debitis ex, veniam, provident earum doloremque et sapiente. Atque similique nemo numquam obcaecati magni officiis distinctio quibusdam! Deleniti libero odio modi temporibus maiores. Vel amet velit nulla, minima dolores corporis excepturi exercitationem. Consectetur obcaecati repudiandae ab molestias, perspiciatis reiciendis vitae hic minus tempora laborum, quidem tempore, ipsum sit temporibus libero adipisci laudantium? Suscipit accusamus et voluptatibus debitis, culpa quis provident in?</p></div>
-    <div class="paragraph"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum, at laborum hic dolore debitis ex, veniam, provident earum
+         doloremque et sapiente. Atque similique nemo numquam obcaecati magni officiis distinctio quibusdam! Deleniti libero odio modi temporibus
+          maiores. Vel amet velit nulla, minima dolores corporis excepturi exercitationem. Consectetur obcaecati repudiandae ab molestias, perspiciatis
+           reiciendis vitae hic minus tempora laborum, quidem tempore, ipsum sit temporibus libero adipisci laudantium? Suscipit accusamus et voluptatibus debitis, culpa quis provident in?</p>
     </div>
-    
+
+      <div class="paragraph">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p>
+      </div>
+   
+
+
+<div class="theimage">
+  <img src="new/pic7.jpg" alt="tester">
+  <img src="new/fsnakken.svg" alt="streg" width="400" />
+</div>
+
     </div>
 </section>
+
+
+<!--------------------->
 
 <section id="third_section">
 
 
-<div class="wrapmeup">
   <div class="sec2grid">
     
+      <div>
+        <img src="new/pic5.jpg" alt="tester">
+        <img src="new/prikstreg.svg" alt="stregmedprik" width="400" />
+      </div>
+
+
     <div class="paragraph">
-      
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus temporibus perferendis autem. Cum suscipit
         tenetur rem error id optio libero temporibus totam amet omnis!</p>
     </div>
+
     <div class="paragraph">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit
         eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p>
     </div>
 
-    <div>
-    <img src="new/pic5.jpg" alt="tester">
-    <img src="new/prikstreg.svg" alt="stregmedprik" width="400" />
-    </div>
-    </div>
+    
+
 
   </div>
 </section>
@@ -283,14 +314,16 @@ padding-bottom: 3rem;
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem unde modi reprehenderit debitis quidem magni veniam assumenda? Quos a repellat nostrum voluptatum impedit, et alias! Maiores distinctio minima sequi, ea, nulla delectus molestias saepe, vel natus reprehenderit quo optio.
 
   </p>
+
+  <div class="centerbatten">
+    <button class="batten">TILMELD NYHEDSBREV</button>
+  </div>
   </div>
 
   <div id="imege">
     <img id="omgg" src="billeder/wheel.png" alt="oke">
 
-    <div class="centerbatten">
-    <button class="batten">TILMELD NYHEDSBREV</button>
-    </div>
+    
 
   </div>
   
