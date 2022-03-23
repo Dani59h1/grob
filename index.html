@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fortsæt snakken...</title>
     <link rel="icon" type="image/x-icon" href="billeder/logo.svg">
+
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -18,10 +19,19 @@
 
 /* ____________ SECTION 1 ____________ */
 
-p {
+p, li {
   line-height: 1.5;
+  font-family: 'tahoma';
+  color: #00382a;
 }
 
+#third_section li {
+
+  font-size: 1.5rem;
+   list-style-type: circle;
+     list-style-position: inside;
+
+}
 
 
 #first_section { 
@@ -38,6 +48,50 @@ h2 {
      font-family:'knockout';
      font-style: italic;
     
+}
+
+h4 {
+    color: #007F61;
+    font-size: 3rem;
+     font-family:'knockout';
+     font-style: italic;
+       padding-bottom: 1rem;
+}
+
+#fourth_section h4 {
+   
+    font-size: 2.5rem;
+
+}
+
+#fourth_section p {
+   font-size: 1.5rem;
+
+}
+
+#fourth_section p {
+   padding-bottom: 1rem;
+
+}
+
+@media (max-width: 960px){
+  h4 {
+    font-size: 2rem;
+  }
+
+  #third_section li {
+  font-size: 1.2rem;
+}
+
+#second_section p {
+  font-size: 0.8rem;
+}
+
+#fourth_section p {
+   font-size: 1rem;
+
+}
+
 }
 
 #second_section h3 {
@@ -75,7 +129,9 @@ padding-top: 2rem;
     
 }
 
-
+#third_section .fsnak, #fourth_section .fsnak {
+  padding-bottom: 1rem;
+}
 
 
 
@@ -89,7 +145,7 @@ main {
   background-position: center;
 }
 
-.sec2grid {
+.sec2grid, .sec3grid {
   background-color: rgb(248, 248, 160);
   background: linear-gradient(0deg, rgba(249,249,195,1) 0%, rgb(248, 207, 116) 100%);
   
@@ -104,24 +160,38 @@ main {
     padding: 3rem;
 }
 
+
+
+
+
+.sec3grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 3rem;
+}
+
 #second_section h2 {
   padding-left: 0.4rem;
 }
 }
 
 @media (max-width: 649px){
-.sec2grid {
+.sec2grid, .sec3grid {
     padding: 2rem;
 }
 .paragraph {
   padding-block: 1rem;
 }
 
-.fsnak {
+#third_section li {
+  font-size: 1rem;
 }
 
+
+
 #second_section h3 {
-      font-size: 1rem;
+      font-size: 1.2rem;
       padding-bottom: 1rem;
       padding-right: 0.1rem;
        padding-top: 0.5rem;
@@ -129,7 +199,14 @@ main {
 
 
 #second_section h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+}
+
+
+
+#third_section h4 {
+  font-size: 2rem;
+
 }
 
 main { 
@@ -165,6 +242,12 @@ main {
 /* ________________SECTION 3____________________ */ 
 
 
+/* #third_section h4 {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+      padding-right: 0.1rem;
+       padding-top: 0.5rem;
+} */
 
 /* 
 ______________SECTION 4 _____________________  */
@@ -188,7 +271,7 @@ padding-bottom: 3rem;
 }
 
 .batten {
-  background-color: #4CAF50;
+  background-color: rgb(42, 155, 69);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -296,21 +379,31 @@ padding-bottom: 3rem;
       <h2>fortsæt snakken</h2>
       <img class="fsnak" src="new/stregmedprik2.svg" alt="streg"/>
       <h3>I SAMARBEJDE MED ORGANISATIONER</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum, at laborum hic dolore debitis ex, veniam, provident earum
-         doloremque et sapiente. Atque similique nemo numquam obcaecati magni officiis distinctio quibusdam! Deleniti libero odio modi temporibus
-          maiores. Vel amet velit nulla, minima dolores corporis excepturi exercitationem. Consectetur obcaecati repudiandae ab molestias, perspiciatis
-           reiciendis vitae hic minus tempora laborum, quidem tempore, ipsum sit temporibus libero adipisci laudantium? Suscipit accusamus et voluptatibus debitis, culpa quis provident in?</p>
-    </div>
+      <p>”Fortsæt snakken…” er et initiativ der tager afsæt i Teater GROBs intention om, at organisere et teater med en politisk
+      vision om, at skabe plads i kulturen til de stemmer som ikke normalt bliver hørt. Her kollaborere teatret med relevante
+      organisationer, alt efter fortællingernes tematikker, for at sikre at den kunst Teater GROB udbyder, er repræsentativ og
+      vigtig.
+      Vi inviterer her relevante NGO’er ind i arbejdsrummet, for at udvide teatrets- og kunstens perspektiv. Vi vil løbende
+      være i dialog med de udvalgte NGO’er gennem udarbejdelsen af sæsonens forestillinger, så vi sikrer unikke, vigtige og
+      autentiske fortællinger.</div>
 
       <div class="paragraph">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p>
+        <p>Kampagnen ”fortsæt snakken…” har til formål, at behandle samtidens tematikker i ny skrevet dramatik, med det
+        udgangspunkt; at kunsten skal repræsentere hvem kunsten omhandler. Det er derfor vigtigt at vi, som kulturinstitution,
+        gør en dyd ud af at lytte til eksperterne, inden for de historier vi formidler.
+        Til slut vil organisationerne blive inviteret til forpremiere, hvor personer herfra, har mulighed for at anmelde
+        forestillingerne. Disse anmeldelser vil blive lagt op på Teater GROB’s sociale medier, så publikum kan få et indblik i
+        hvad folk med den levede erfaring mener. Gennem samarbejdet vil Teater GROB også fremme disse organisationers vigtige
+        arbejde. Vi agter at lade organisationssamarbejdet gennemstrømme teatrets kunst, samt formidlingsmæssige apparat, for at
+        skabe så inkluderende et teater som muligt.
+        </p>
       </div>
    
 
 
 <div class="theimage">
   <img src="new/pic7.webp" alt="tester">
-  <img src="new/fsnakken.svg" alt="streg" width="400" />
+  <img src="new/prikstreg.svg" alt="stregmedprik" width="400" />
 </div>
 
     </div>
@@ -322,7 +415,7 @@ padding-bottom: 3rem;
 <section id="third_section">
 
 
-  <div class="sec2grid">
+  <div class="sec3grid">
     
       <div>
         <img src="new/pic5.webp" alt="tester">
@@ -331,13 +424,16 @@ padding-bottom: 3rem;
 
 
     <div class="paragraph">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus temporibus perferendis autem. Cum suscipit
-        tenetur rem error id optio libero temporibus totam amet omnis!</p>
-    </div>
-
-    <div class="paragraph">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatibus maxime eos in laudantium optio sit
-        eveniet ducimus architecto nostrum accusamus, expedita amet reprehenderit repudiandae?</p>
+      <h4>Hvad Teater GROB garanterer:</h4>
+      <img class="fsnak" src="new/stregmedprik2.svg" alt="streg" />
+      <ul>
+      <li>Autentiske fortællinger fra Nørrebro</li>
+      <li>Oplysende, tankevækkende og underholdende kunst</li>      
+      <li>Vi tager fat i samtidens tematikker, og giver mikrofonen til de underrepræsenterede stemmer</li>
+      <li>Forestillinger der forbliver i dine tanker.</li>
+      <li>Fortællinger direkte fra de personer forestillingen omhandler.</li> 
+      <li>Forestillinger der fortsætter snakken…</li> 
+      </ul>
     </div>
 
     
@@ -351,11 +447,22 @@ padding-bottom: 3rem;
 
 <section id="fourth_section">
 
-  <div id="text"
-  ><h3>test</h3>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem unde modi reprehenderit debitis quidem magni veniam assumenda? Quos a repellat nostrum voluptatum impedit, et alias! Maiores distinctio minima sequi, ea, nulla delectus molestias saepe, vel natus reprehenderit quo optio.
+  <div id="text">
+  <h4>Tilmeld dig vores nyhedsbrev og vind fede præmier!</h4>
+  <img class="fsnak" src="new/stregmedprik2.svg" alt="streg" />
 
-  </p>
+  <p> Kan du heller ikke vente til næste teateroplevelse? </p>
+
+  <p>Frygt ej! Nu har du chancen for at fremskynde processen ved at vinde fede præmier
+    til Teater Grob såsom fribilletter, vilde tilbud samt drinks i baren.
+    </p>
+  
+    <p>at tilmelde dig vores nyhedsbrev vil du modtage en email, hvor du kan få lov til
+    at dreje vores lykkehjul.
+    samtidig vil du regelmæssigt blive opdateret på sidste nyt omkring Teater Grob med
+    alt fra nyeste forestillinger og events til behind the scenes, anmeldelser, fremtidige
+    konkurrencer og meget mere!
+    </p>
 
   <div class="centerbatten">
     <button class="batten">TILMELD NYHEDSBREV</button>
